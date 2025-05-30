@@ -1,0 +1,7 @@
+permission: 'hub.fly'
+byDefault: true
+message: 'Fly is &aenable!'
+worlds:
+  - "lobby"
+  - "world"
+# Set message: '' - to remove message on join.
