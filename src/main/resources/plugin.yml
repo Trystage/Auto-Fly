@@ -1,3 +1,4 @@
 name: Auto-Fly
 version: '${project.version}'
 main: win.trystage.autofly.AutoFly
+author: BrainRTP Trystage4C01
