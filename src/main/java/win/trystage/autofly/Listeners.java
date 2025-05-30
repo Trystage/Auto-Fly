@@ -36,6 +36,9 @@ public class Listeners implements Listener {
         if(worlds.contains(event.getPlayer().getWorld().getName())){
             this.setFly(event.getPlayer());
         }
+        else{
+            event.getPlayer().setAllowFlight(false);
+        }
     }
 
     @EventHandler
@@ -54,6 +57,5 @@ public class Listeners implements Listener {
                 player.sendMessage(ChatColor.translateAlternateColorCodes('&', this.message));
             }
         }
-
     }
 }
