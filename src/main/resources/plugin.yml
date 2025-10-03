@@ -1,4 +1,10 @@
 name: Auto-Fly
 version: '${project.version}'
 main: win.trystage.autofly.AutoFly
-author: BrainRTP Trystage4C01
+author: BrainRTP Trystage
+commands:
+  fly:
+    description: Toggle player flight
+    usage: /fly
+    permission: group.vip
+    permission-message: Unknown command. Type "/help" for help.

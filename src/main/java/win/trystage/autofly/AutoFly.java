@@ -16,5 +16,8 @@ public final class AutoFly extends JavaPlugin {
         boolean byDefault = this.getConfig().getBoolean("byDefault");
         List<String> worlds = this.getConfig().getStringList("worlds");
         this.getServer().getPluginManager().registerEvents(new Listeners(permission, message, byDefault, worlds), this);
+        if (this.getCommand("fly") != null) {
+            this.getCommand("fly").setExecutor(new FlyCommand());
+        }
     }
 }
